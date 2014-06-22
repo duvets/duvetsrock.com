@@ -119,16 +119,17 @@ div.section {
 <div class="section" id="gigs">
   <h1>Upcoming Gigs</h1>
   <table class="data">
+	{{$data := . }}
   {{range $i, $gig := .Gigs}}
-    {{$location := index .locations .gig.Location}}
+    {{$location := index $data.Locations $gig.Location}}
     <tr>
       {{if $i}}
       <td colspan="99"><div class="hr"></div></td>
       {{end}}
     </tr>
     <tr class="gig">
-      <td class="date">{{$gig.Date}}</td>
-      <td class="time">{{$gig.Time}}</td>
+      <td class="date">{{$gig.StartTime | formatTime "Jan 2 2006"}}</td>
+      <td class="time">{{$gig.StartTime | formatTime "3:04 PM"}}</td>
       <td class="location">{{$location.Title}}</td>
     </tr>
     <tr class="details">
