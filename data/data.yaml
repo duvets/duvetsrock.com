@@ -1,0 +1,37 @@
+Gigs:
+  - StartTime: 2014-06-27 22:00:00
+    Duration: 3.5h
+    Location: maggies
+  - StartTime: 2014-07-11 22:00:00
+    Duration: 3.5h
+    Location: britannia_arms
+  - StartTime: 2014-07-26 22:00:00
+    Location: private
+  - StartTime: 2014-08-02 22:00:00
+    Duration: 3.5h
+    Location: dans_bar
+locations:
+  private:
+    Title: "Private Event"
+  maggies:
+    Title: "Maggie McGarry's"
+    Address: 1353 Grant Avenue
+    City: San Francisco
+    State: CA
+    Zip: 94133
+  britannia_arms:
+    Title: "Britannia Arms Almaden"
+    Address: 5026 Almaden Expressway
+    City: San Jose
+    State: CA
+    Zip: 95118
+  dans_bar:
+    Title: "Dan's Bar"
+    Address: 1524 Civic Drive
+    City: Walnut Creek
+    State: CA
+    Zip: 94596
+Songs:
+  - {Title: Teardrop, Artist: Massive Attack, Year: 1999}
+  - {Title: Applause, Artist: Lady Gaga, Year: 2013}
+  - {Title: The Pot, Artist: Tool, Year: 2009}

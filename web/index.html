@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+<head>
+  <title>The Duvets - San Francisco Bay Area Cover Band</title>
+  <meta name=viewport content="width=device-width, initial-scale=1">
+</head>
+<style>
+body {
+  background-color: #f0f0f0;
+  margin: 0px;
+  padding: 0px;
+}
+
+.gig .time {
+  color: #a0a0a0;
+}
+table.data {
+  width: 100%;
+}
+table.data td {
+  padding: 4px;
+  vertical-align: top;
+
+}
+table.data td.date {
+  white-space: nowrap;
+}
+
+table.data td.year {
+  white-space: nowrap;
+  text-align: right;
+}
+
+div.section h1 {
+  text-align: left;
+  margin: 6px 4px;
+  font-size: medium;
+}
+tr.details {
+  display:none;
+}
+
+div.section {
+  font-family: sans-serif;
+  background-color: #ffffff;
+  border: 1px solid #d0d0d0;
+  box-shadow: 1px 3px 2px 0px rgba(0, 0, 0, 0.08);
+  margin: 8px;
+}
+.hr {
+  margin-left: 12px;
+  margin-right: 12px;
+  border-top: 1px solid #e0e0e0;
+}
+
+#carousel {
+  width: 100%
+}
+#carousel img {
+  width: 100%;
+
+}
+
+#carousel .inner {
+  width: 100%;
+  padding-top: 39.5833%;
+  background-color: red;
+  position: relative;
+}
+
+#carousel img.background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+#carousel img.logo {
+  width: 30%;
+  height: 30%;
+  min-width: 300px;
+  min-height: 118.75px;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+.inner .content {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+#video .inner {
+  width: 100%;
+  padding-top: 56.25%;
+  background-color: red;
+  position: relative;
+}
+
+
+@media screen and (min-width: 700px) {
+  #gigs {
+    width: 350px;
+  }
+}
+
+</style>
+<body>
+<div id="carousel">
+  <div class="inner">
+    <div class="content">
+      <img class="background" src="/carousel3-1440x570.jpg" alt="The Duvets on stage" width="1440" height="570">
+      <img class="logo" src="/carousel3-1440x570.jpg" alt="The Duvets on stage" width="1440" height="570">
+    </div>
+  </div>
+</div>
+<div class="section" id="gigs">
+  <h1>Upcoming Gigs</h1>
+  <table class="data">
+  {{range $i, $gig := .Gigs}}
+    {{$location := index .locations .gig.Location}}
+    <tr>
+      {{if $i}}
+      <td colspan="99"><div class="hr"></div></td>
+      {{end}}
+    </tr>
+    <tr class="gig">
+      <td class="date">{{$gig.Date}}</td>
+      <td class="time">{{$gig.Time}}</td>
+      <td class="location">{{$location.Title}}</td>
+    </tr>
+    <tr class="details">
+      <td colspan="99">Additional details"</td>
+    </tr>
+  {{ end }}
+  </table>
+</div>
+<div class="section" id="video">
+  <div class="inner">
+    <div class="content">
+    </div>
+  </div>
+
+</div>
+<div class="section" id="songlist">
+  <h1>Latest Song Additions</h1>
+  <table class="data">
+  {{range $i, $song := .Songs}}
+    <tr>
+      {{if $i}}
+      <td colspan="99"><div class="hr"></div></td>
+      {{end}}
+    </tr>
+    <tr class="song">
+      <td class="title">{{$song.Title}}</td>
+      <td class="artist">{{$song.Artist}}</td>
+      <td class="year">{{$song.Year}}</td>
+    </tr>
+    </tr>
+  {{ end }}
+  </table>
+</div>
+</body>
+</html>
