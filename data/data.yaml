@@ -32,6 +32,48 @@ locations:
     state: CA
     zip: 94596
 songs:
-  - {title: Teardrop, artist: Massive Attack, year: 1999}
-  - {title: Applause, artist: Lady Gaga, year: 2013}
-  - {title: The Pot, artist: Tool, year: 2009}
+  - {artist: Paramore, title: Ain't It Fun, year: 2014}
+  - {artist: Ed Sheeran, title: Sing, year: 2014}
+  - {artist: Taylor Swift, title: 22, year: 2013}
+  - {artist: Lady Gaga, title: Applause, year: 2013}
+  - {artist: Robin Thicke, title: Blurred Lines, year: 2013}
+  - {artist: Zedd ft. Foxes, title: Clarity, year: 2013}
+  - {artist: OneRepublic, title: Counting Stars, year: 2013}
+  - {artist: Katy Perry, title: Dark Horse, year: 2013}
+  - {artist: Ylvis, title: The Fox, year: 2013}
+  - {artist: Daft Punk, title: Get Lucky, year: 2013}
+  - {artist: Pharrell Williams, title: Happy, year: 2013}
+  - {artist: New Politics, title: Harlem, year: 2013}
+  - {artist: Avicii, title: Hey Brother, year: 2013}
+  - {artist: Calvin harris ft Ellie Goulding, title: I Need Your Love, year: 2013}
+  - {artist: Eminem ft. Rihanna, title: The Monster, year: 2013}
+  - {artist: Jason Derulo, title: The Other Side, year: 2013}
+  - {artist: Bastille, title: Pompeii, year: 2013}
+  - {artist: Imagine Dragons, title: Radioactive, year: 2013}
+  - {artist: Katy Perry, title: Roar, year: 2013}
+  - {artist: Zedd ft. Hayley Williams, title: Stay The Night, year: 2013}
+  - {artist: Justin Timberlake, title: Suit & Tie, year: 2013}
+  - {artist: Pitbull ft. Kesha, title: Timber, year: 2013}
+  - {artist: Bruno Mars, title: Treasure, year: 2013}
+  - {artist: Avicii, title: Wake Me Up, year: 2013}
+  - {artist: Miley Cyrus, title: Wrecking Ball, year: 2013}
+  - {artist: Kesha, title: Die Young, year: 2012}
+  - {artist: The Black Keys, title: Gold On The Ceiling, year: 2012}
+  - {artist: Alabama Shakes, title: Hold On, year: 2012}
+  - {artist: Icona Pop, title: I Love It, year: 2012}
+  - {artist: Fun, title: Some Nights, year: 2012}
+  - {artist: Nikki Minaj, title: Starships, year: 2012}
+  - {artist: Lady Gaga, title: Born This Way, year: 2011}
+  - {artist: Carly Rae Jepsem, title: Call Me Maybe, year: 2011}
+  - {artist: Macklemore & Ryan Lewis, title: Can't Hold Us, year: 2011}
+  - {artist: Jessie J, title: Domino, year: 2011}
+  - {artist: Calvin Harris, title: Feel So Close, year: 2011}
+  - {artist: Flo Rida, title: Good Feeling, year: 2011}
+  - {artist: Katy Perry, title: Last Friday Night, year: 2011}
+  - {artist: Ellie Gouldin, title: Lights, year: 2011}
+  - {artist: Of Monsters and Men, title: Little Talks, year: 2011}
+  - {artist: The Black Keys, title: Lonely Boy, year: 2011}
+  - {artist: Maroon 5, title: Moves Like Jagger, year: 2011}
+  - {artist: LMFAO, title: Party Rock Anthem, year: 2011}
+  - {artist: Capital Cities, title: Safe and Sound, year: 2011}
+  - {artist: Train, title: "Save Me, San Francisco", year: 2011}

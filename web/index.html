@@ -140,7 +140,13 @@ div.section {
     <tr class="gig">
       <td class="date">{{$gig.StartTime | formatTime "Jan 2 2006"}}</td>
       <td class="time">{{$gig.StartTime | formatTime "3:04 PM"}}</td>
-      <td class="location">{{$location.Title}}</td>
+      
+      <td class="location">
+        {{if $location.Address}}
+          <a href="http://maps.google.com/?q={{$location.Title}}%20{{$location.Address}}%20{{$location.City}}%20{{$location.State}}%20{{$location.Zip}}">{{$location.Title}}</a></td>
+        {{else}}
+          {{$location.Title}}
+        {{end}}
     </tr>
     <tr class="details">
       <td colspan="99">Additional details"</td>
@@ -169,10 +175,9 @@ div.section {
       {{end}}
     </tr>
     <tr class="song">
-      <td class="title">{{$song.Title}}</td>
       <td class="artist">{{$song.Artist}}</td>
+      <td class="title">{{$song.Title}}</td>
       <td class="year">{{$song.Year}}</td>
-    </tr>
     </tr>
   {{ end }}
   </table>
