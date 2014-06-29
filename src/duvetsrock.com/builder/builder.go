@@ -7,6 +7,7 @@ import "net/http"
 import "os"
 import "path"
 import "regexp"
+import "strings"
 import "time"
 import "html/template"
 import "github.com/go-yaml/yaml"
@@ -149,17 +150,26 @@ func serveWebsite(config config) error {
 			fileServer.ServeHTTP(w, req)
 			return
 		}
-		w.Header().Add("Content-Type", "text/plain")
-		w.WriteHeader(http.StatusInternalServerError)
-		w.Write([]byte(fmt.Sprintf("%v", err)))
+    if err != nil {
+      w.Header().Add("Content-Type", "text/plain")
+      w.WriteHeader(http.StatusInternalServerError)
+      w.Write([]byte(fmt.Sprintf("%v", err)))
+    }
 	})
+  port := 8080
 	s := &http.Server{
-		Addr:           ":8080",
+		Addr:           fmt.Sprintf(":%v", port),
 		Handler:        mux,
 		ReadTimeout:    10 * time.Second,
 		WriteTimeout:   10 * time.Second,
 		MaxHeaderBytes: 1 << 20,
 	}
+  hostname, err := os.Hostname()
+  if err != nil {
+    hostname = "localhost"
+  }
+  fmt.Printf("Started server at http://%v:%v\n", strings.ToLower(hostname), port)
+
 	return s.ListenAndServe()
 }
 
