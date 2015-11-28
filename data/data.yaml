@@ -10,6 +10,9 @@ gigs:
   - startTime: 2014-08-02 22:00:00 US/Pacific
     duration: 3.5h
     location: dans_bar
+  - startTime: 2015-12-04 20:00:00 US/Pacific
+    duration: 3.5h
+    location: private
 locations:
   private:
     title: "Private Event"
